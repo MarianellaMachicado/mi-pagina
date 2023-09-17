@@ -134,3 +134,7 @@ p {
         min-width: 420px; /* Establece el ancho mínimo */
     }
 }
+
+strong{
+    color: #805bc5;
+}
