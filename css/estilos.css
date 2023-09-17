@@ -32,7 +32,7 @@ nav a {
 
 main {
     padding: 20px;
-    flex-grow: 1; /* Esto expandirá el contenido principal para ocupar el espacio restante */
+    flex-grow: 1;
 }
 
 footer {
@@ -59,10 +59,20 @@ footer {
     }
 }
 
-/*CARDS*/
-/* Estilos generales */
-/* Resto de los estilos generales */
+@media (max-width: 768px) {
+    .cards {
+        justify-content: center;
+    }
 
+    .card {
+        width: calc(50% - 20px);
+        margin-right: 20px;
+        margin-left: 20px;
+        min-width: 420px; 
+    }
+}
+
+/*CARDS*/
 .contenido {
     text-align: center;
 }
@@ -74,7 +84,7 @@ h2 {
 h3 {
     font-size: 1.2rem;
     margin-top: 10px;
-    font-weight: bold; /* Texto en negrita */
+    font-weight: bold;
 }
 
 p {
@@ -94,10 +104,10 @@ p {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 15px;
-    background-color: rgba(24, 24, 24, 0.9); /* Fondo con transparencia */
+    background-color: rgba(24, 24, 24, 0.9);
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
-    color: #fff; /* Texto en blanco */
+    color: #fff;
 }
 
 .card img {
@@ -107,32 +117,18 @@ p {
 }
 
 .spotify-button {
-    display: inline-block; /* En línea con el texto */
-    background-color: #1DB954; /* Color de Spotify */
+    display: inline-block;
+    background-color: #1DB954;
     color: #fff;
     text-decoration: none;
     padding: 5px 10px;
-    border-radius: 30px; /* Botón redondeado */
+    border-radius: 30px;
     margin-top: 10px;
-    transition: background-color 0.3s; /* Transición suave al pasar el mouse */
+    transition: background-color 0.3s;
 }
 
 .spotify-button:hover {
-    background-color: #169c45; /* Cambio de color al pasar el mouse */
-}
-
-/* Estilos responsivos */
-@media (max-width: 768px) {
-    .cards {
-        justify-content: center;
-    }
-
-    .card {
-        width: calc(50% - 20px);
-        margin-right: 20px;
-        margin-left: 20px;
-        min-width: 420px; /* Establece el ancho mínimo */
-    }
+    background-color: #169c45;
 }
 
 strong{
