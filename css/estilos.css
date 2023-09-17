@@ -3,6 +3,9 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
@@ -29,6 +32,7 @@ nav a {
 
 main {
     padding: 20px;
+    flex-grow: 1; /* Esto expandirá el contenido principal para ocupar el espacio restante */
 }
 
 footer {
@@ -52,5 +56,81 @@ footer {
     nav li {
         display: block;
         margin-bottom: 10px;
+    }
+}
+
+/*CARDS*/
+/* Estilos generales */
+/* Resto de los estilos generales */
+
+.contenido {
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    font-weight: bold; /* Texto en negrita */
+}
+
+p {
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    width: calc(25% - 20px);
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    background-color: rgba(24, 24, 24, 0.9); /* Fondo con transparencia */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #fff; /* Texto en blanco */
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.spotify-button {
+    display: inline-block; /* En línea con el texto */
+    background-color: #1DB954; /* Color de Spotify */
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 30px; /* Botón redondeado */
+    margin-top: 10px;
+    transition: background-color 0.3s; /* Transición suave al pasar el mouse */
+}
+
+.spotify-button:hover {
+    background-color: #169c45; /* Cambio de color al pasar el mouse */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .cards {
+        justify-content: center;
+    }
+
+    .card {
+        width: calc(50% - 20px);
+        margin-right: 20px;
+        margin-left: 20px;
+        min-width: 420px; /* Establece el ancho mínimo */
     }
 }
