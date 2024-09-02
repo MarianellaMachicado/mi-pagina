@@ -1,17 +1,21 @@
-/* Estilos generales */
-body {
+/* Estilos generales*/
+body{
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background-color: rgba(28, 24, 41,0.8);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/fondo.jpeg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #fff;
+    margin: 0;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
+    background-color: rgba(28, 24, 41,0.8);
     text-align: center;
 }
 
@@ -33,10 +37,12 @@ nav a {
 main {
     padding: 20px;
     flex-grow: 1;
+    display: flex;
+    justify-content: center;
 }
 
 footer {
-    background-color: #333;
+    background-color: rgba(28, 24, 41,0.8);
     color: #fff;
     text-align: center;
     padding: 10px;
@@ -75,6 +81,7 @@ footer {
 /*CARDS*/
 .contenido {
     text-align: center;
+    max-width: 70%;
 }
 
 h2 {
@@ -102,12 +109,19 @@ p {
     width: calc(25% - 20px);
     margin-bottom: 20px;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0,0.6); ;
     border-radius: 15px;
-    background-color: rgba(24, 24, 24, 0.9);
+    background-color: rgba(0, 0, 0,0.6); 
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
     color: #fff;
+    text-decoration: none;
+}
+
+.card:hover{
+    background-color: rgba(38, 77, 104, 0.6);
+    border: transparent;
+    transform: scale(1.05); 
 }
 
 .card img {
@@ -121,7 +135,7 @@ p {
     background-color: #1DB954;
     color: #fff;
     text-decoration: none;
-    padding: 5px 10px;
+    padding: 7px 12px;
     border-radius: 30px;
     margin-top: 10px;
     transition: background-color 0.3s;
@@ -131,6 +145,23 @@ p {
     background-color: #169c45;
 }
 
-strong{
-    color: #805bc5;
+.card-acerca-de {
+    margin-bottom: 20px;
+    padding: 40px;
+    border: 1px solid rgba(0, 0, 0,0.6); ;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0,0.6); 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #fff;
+}
+
+.card-acerca-de:hover{
+    background-color: rgba(38, 77, 104, 0.6);
+    border: transparent;
+    transform: scale(1.05); 
+}
+
+.card-acerca-de img{
+    border-radius: 15px;
 }
